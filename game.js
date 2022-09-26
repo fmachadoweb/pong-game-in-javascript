@@ -20,6 +20,7 @@ let yRaqueteOponente = 150;
 let velocidadeYOponente;
 
 let colidiu = false;
+let chanceDeErrar = 0;
 
 // Placar do jogo
 let meusPontos = 0;
@@ -106,12 +107,8 @@ function verificaColisaoRaquete(x, y) {
 
 
 function movimentaRaqueteOponente(){
-  if (keyIsDown(87)){
-    yRaqueteOponente -= 10;
-  }
-  if (keyIsDown(83)){
-    yRaqueteOponente += 10;
-  }
+  velocidadeYOponente = yBola - yRaqueteOponente - wRaquete/2 -30;
+  yRaqueteOponente += velocidadeYOponente
 }
 
 function incluiPlacar () {
@@ -137,4 +134,33 @@ function marcaPonto () {
     pontosOponente +=1;
     ponto.play();
   }
+}
+
+
+function movimentaRaqueteOponente(){
+  velocidadeYOponente = yBola -yRaqueteOponente - wRaquete / 2 - 30;
+  yRaqueteOponente += velocidadeYOponente + chanceDeErrar
+  calculaChanceDeErrar()
+}
+
+
+function calculaChanceDeErrar() {
+  if (pontosOponente >= meusPontos) {
+    chanceDeErrar += 1
+    if (chanceDeErrar >= 39){
+    chanceDeErrar = 40
+    }
+  } else {
+    chanceDeErrar -= 1
+    if (chanceDeErrar <= 35){
+    chanceDeErrar = 35
+    }
+  }
+}
+
+
+function bolinhaNaoFicaPresa(){
+    if (XBolinha - raio < 0){
+    XBolinha = 23
+    }
 }
