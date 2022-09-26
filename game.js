@@ -97,9 +97,17 @@ function movimentaRaqueteOponente(){
 }
 
 function incluiPlacar () {
-  fill (255)
-  text(meusPontos, 200, 26);
-  text(pontosOponente, 400, 26);
+  stroke (255);
+  textAlign (CENTER);
+  textSize (16);
+  fill (255,140,0);
+  rect (150, 10, 40, 20);
+  fill (255);
+  text(meusPontos, 170, 26);
+  fill (255,140,0);
+  rect (450, 10, 40, 20);
+  fill (255);
+  text(pontosOponente, 470, 26);
 }
 
 function marcaPonto () {
