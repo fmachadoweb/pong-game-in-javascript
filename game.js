@@ -39,7 +39,7 @@ function preload (){
 
 function setup() {
   createCanvas(600, 400);
-  trilha.setVolume(0.3);
+  trilha.setVolume(1);
   trilha.loop();
 }
 
