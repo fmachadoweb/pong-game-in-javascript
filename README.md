@@ -9,7 +9,7 @@
     <img src="https://github.com/othneildrew/Best-README-Template/raw/master/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">JOGO DO PONG EM JAVASCRIPT, HTML, CSS</h3>
+  <h3 align="center">JOGO DO PONG EM JAVASCRIPT COM HTML, CSS</h3>
   
   <p align="center">Jogo do PONG sendo desenvolvido em Javascript, com HTML5 e CSS3 do curso de Programação da da Alura. </p>
   
