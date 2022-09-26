@@ -11,7 +11,7 @@
 
   <h3 align="center">JOGO DO PONG EM JAVASCRIPT COM HTML, CSS</h3>
   
-  <p align="center">Jogo do PONG desenvolvido em Javascript, com HTML5 e CSS3, versão multiplayer, para controlar o P1 use setas para cima e para baixo e para controlar o P2 use W e S. Feito no curso de Programação da da Alura. </p>
+  <p align="center">Jogo do PONG desenvolvido em Javascript, com HTML5 e CSS3. Feito no curso de Programação da da Alura. Eu fiz umas modificações no código originale  foi acrescentado a opção de jogar em multiplayer player 1 vs player 2, para jogar em multiplayer, para controlar o P1 use W e S para subir e descer a raquete e para o P2 use Seta para cima e Seta para baixo</p>
   
   <p align="center">Curso <code>ALURA.</code> </p>
 
