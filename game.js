@@ -106,8 +106,12 @@ function verificaColisaoRaquete(x, y) {
 
 
 function movimentaRaqueteOponente(){
-  velocidadeYOponente = yBola - yRaqueteOponente - wRaquete/2 -30;
-  yRaqueteOponente += velocidadeYOponente
+  if (keyIsDown(87)){
+    yRaqueteOponente -= 10;
+  }
+  if (keyIsDown(83)){
+    yRaqueteOponente += 10;
+  }
 }
 
 function incluiPlacar () {
