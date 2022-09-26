@@ -9,13 +9,13 @@ let velocidadeXBola = 6;
 let velocidadeYBola = 6;
 
 //variáveis da raquete
-let xRaquete = 5;
+let xRaquete = 0;
 let yRaquete = 150;
 let wRaquete = 10;
 let hRaquete = 90;
 
 //variáveis da raquete oponente
-let xRaqueteOponente = 585;
+let xRaqueteOponente = 588;
 let yRaqueteOponente = 150;
 let velocidadeYOponente;
 
@@ -40,6 +40,8 @@ function draw() {
   raquete(xRaqueteOponente, yRaqueteOponente);
   movimentaRaqueteOponente();
   verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);
+  incluiPlacar ();
+  marcaPonto ();
 }
 
 
@@ -92,4 +94,19 @@ function verificaColisaoRaquete(x, y) {
 function movimentaRaqueteOponente(){
   velocidadeYOponente = yBola - yRaqueteOponente - wRaquete/2 -30;
   yRaqueteOponente += velocidadeYOponente
+}
+
+function incluiPlacar () {
+  fill (255)
+  text(meusPontos, 200, 26);
+  text(pontosOponente, 400, 26);
+}
+
+function marcaPonto () {
+  if (xBola > 590){
+    meusPontos += 1;
+  }
+  if (xBola < 10){
+    pontosOponente +=1;
+  }
 }
