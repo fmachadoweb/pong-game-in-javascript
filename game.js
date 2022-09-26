@@ -8,14 +8,11 @@ let raio = diametro/2;
 let velocidadeXBola = 6;
 let velocidadeYBola = 6;
 
-
 //variáveis da raquete
 let xRaquete = 5;
 let yRaquete = 150;
 let wRaquete = 10;
 let hRaquete = 90;
-
-
 
 //variáveis da raquete oponente
 let xRaqueteOponente = 585;
@@ -23,6 +20,10 @@ let yRaqueteOponente = 150;
 let velocidadeYOponente;
 
 let colidiu = false;
+
+// Placar do jogo
+let meusPontos = 0;
+let pontosOponente = 0;
 
 function setup() {
   createCanvas(600, 400);
@@ -67,7 +68,6 @@ function verificarBorda () {
 function raquete(x,y) {
     rect(x, y, wRaquete, hRaquete);
 }
-
 
 
 
