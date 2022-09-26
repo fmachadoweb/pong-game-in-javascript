@@ -25,8 +25,21 @@ let colidiu = false;
 let meusPontos = 0;
 let pontosOponente = 0;
 
+//sons do jogo
+let raquetada;
+let ponto;
+let trilha;
+
+function preload (){
+  trilha = loadSound("trilha.mp3");
+  ponto = loadSound("ponto.mp3");
+  raquetada = loadSound("raquetada.mp3");
+}
+
 function setup() {
   createCanvas(600, 400);
+  trilha.setVolume(0.3);
+  trilha.loop();
 }
 
 function draw() {
@@ -86,6 +99,7 @@ function verificaColisaoRaquete(x, y) {
     colidiu = collideRectCircle(x, y, wRaquete, hRaquete, xBola, yBola, raio);
     if (colidiu) {
         velocidadeXBola *= -1;
+      raquetada.play();
     }
 }
 
@@ -113,8 +127,10 @@ function incluiPlacar () {
 function marcaPonto () {
   if (xBola > 590){
     meusPontos += 1;
+    ponto.play();
   }
   if (xBola < 10){
     pontosOponente +=1;
+    ponto.play();
   }
 }
