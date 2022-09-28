@@ -17,9 +17,7 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/fmachadoweb/pong-game-in-javascript"><strong>Explorar arquivos »</strong></a>
-    <br /><br />
-    <a href="http://hardtek.com.br/pong/"><strong>Demo do jogo »</strong></a>
+    <a href="https://github.com/fmachadoweb/pong-game-in-javascript"><strong>Explorar arquivos »</strong></a> <a href="http://hardtek.com.br/pong/"><strong>Demo do jogo</strong></a>
     <br />
     <br />
   </p>
